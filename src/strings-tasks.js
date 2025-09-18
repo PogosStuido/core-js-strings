@@ -78,8 +78,11 @@ function concatenateStrings(string1, string2) {
  *   getFirstChar('cat') => 'c'
  *   getFirstChar('') => ''
  */
-function getFirstChar(/* value */) {
-  throw new Error('Not implemented');
+function getFirstChar(stringInput) {
+  if (stringInput === '') {
+    return '';
+  }
+  return stringInput.charAt(0);
 }
 
 /**
