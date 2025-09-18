@@ -19,8 +19,15 @@
  *   getStringLength(null) => 0
  *   getStringLength(undefined) => 0
  */
-function getStringLength(/* value */) {
-  throw new Error('Not implemented');
+function getStringLength(string) {
+  if (string === null) {
+    return 0;
+  }
+  if (string === undefined) {
+    return 0;
+  }
+  const number = string.length;
+  return number;
 }
 
 /**
