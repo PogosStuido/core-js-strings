@@ -111,7 +111,7 @@ function removeLeadingAndTrailingWhitespaces(string) {
  *   removeLeadingWhitespaces('cat ') => 'cat '
  *   removeLeadingWhitespaces('\t\t\tHello, World! ') => 'Hello, World! '
  */
-function removeLeadingWhitespaces(/* value */) {
+function removeLeadingWhitespaces() {
   throw new Error('Not implemented');
 }
 
@@ -143,8 +143,11 @@ function removeTrailingWhitespaces(/* value */) {
  *   repeatString('', 3) => ''
  *   repeatString('abc', -2) => ''
  */
-function repeatString(/* str, times */) {
-  throw new Error('Not implemented');
+function repeatString(string, times) {
+  if (string === '' || times <= 0) {
+    return '';
+  }
+  return string.repeat(times);
 }
 
 /**
